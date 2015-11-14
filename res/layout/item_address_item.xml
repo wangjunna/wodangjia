@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp" xmlns:android="http://schemas.android.com/apk/res/android">
+        <TextView
+            android:id="@+id/address_receiver_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="15dp"
+            android:text="长江"
+            android:textColor="#696969"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/address_receiver_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:paddingTop="15dp"
+            android:text="18989899980"
+            android:textColor="#696969"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/address_reciver_provice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/address_receiver_name"
+            android:paddingTop="10dp"
+            android:text="江苏"
+            android:textColor="#9C9C9C"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/address_reciver_city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/address_receiver_name"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/address_reciver_provice"
+            android:paddingTop="10dp"
+            android:text="苏州市"
+            android:textColor="#9C9C9C"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/address_reciver_county"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/address_receiver_name"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/address_reciver_city"
+            android:paddingTop="10dp"
+            android:text="工业园区"
+            android:textColor="#9C9C9C"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/address_reciver_det"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/address_reciver_provice"
+            android:paddingTop="5dp"
+            android:text="仁爱路一号，高博教育集团"
+            android:textColor="#9C9C9C"
+            android:textSize="17sp" />
+
+        <View
+            android:id="@+id/address_viewline"
+            android:layout_width="match_parent"
+            android:layout_height="0.3dp"
+            android:layout_below="@id/address_reciver_det"
+            android:layout_marginTop="15dp"
+            android:background="#CFCFCF" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/address_viewline"
+            android:layout_centerVertical="true"
+            android:paddingBottom="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="5dp" >
+
+            <LinearLayout
+                android:id="@+id/ll_defaull"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:id="@+id/address_moren_img"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/address_check" />
+
+                <TextView
+                    android:id="@+id/address_moren_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@id/address_moren_img"
+                    android:text="默认地址"
+                    android:textColor="#9C9C9C" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp" >
+
+                <ImageView
+                    android:id="@+id/address_delete_img"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/address_delete" />
+
+                <TextView
+                    android:id="@+id/address_delete_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="删除"
+                    android:textColor="#9C9C9C" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/ll_delete" >
+
+                <ImageView
+                    android:id="@+id/address_editor_img"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/address_editor" />
+
+                <TextView
+                    android:id="@+id/address_editor_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:text="编辑"
+                    android:textColor="#9C9C9C" />
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+

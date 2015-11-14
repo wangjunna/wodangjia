@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/buy_goods_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:lines="1"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="5dp"
+        android:text="橘子香蕉"
+        android:textColor="#888888" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#eeeeee" />
+
+    <RelativeLayout
+        android:id="@+id/buy_goods_info"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" >
+
+        <ImageView
+            android:id="@+id/buy_goods_img"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:paddingTop="5dp"
+            android:src="@drawable/ic_launcher" />
+
+        <TextView
+            android:id="@+id/buy_goods_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:lines="2"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@id/buy_goods_img"
+            android:paddingTop="5dp"
+            android:text="背景啊啊富士达发生的发生地方背景啊啊富士达发生的发生地方"
+            android:textColor="#888888" />
+
+        <TextView
+            android:id="@+id/buy_goods_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:text="2" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/buy_goods_count"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@id/buy_goods_count"
+            android:src="@drawable/order_multiply" />
+
+        <TextView
+            android:id="@+id/buy_goods_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/buy_goods_content"
+            android:layout_alignParentBottom="true"
+            android:text="90" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#eeeeee" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="运费："
+            android:textColor="#888888"
+            android:textSize="14dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="0.00 元"
+            android:textColor="#888888" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/gray_background" />
+
+</LinearLayout>

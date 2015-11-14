@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_content_background_color"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical" >
+
+    <RadioGroup
+        android:id="@+id/rag_collect"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/select_goods"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/selector_radbtn_collection"
+            android:button="@null"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/goods"
+            android:textColor="#666666" />
+
+        <View style="@style/collection_line" />
+
+        <RadioButton
+            android:id="@+id/select_store"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/selector_radbtn_collection"
+            android:button="@null"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/store"
+            android:textColor="#666666" />
+    </RadioGroup>
+
+    <View style="@style/order_line" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/collect_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

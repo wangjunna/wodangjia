@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_content_background_color" >
+
+     <com.handmark.pulltorefresh.library.PullToRefreshScrollView
+        xmlns:ptr="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/index_buy_scrollview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        ptr:ptrAnimationStyle="rotate"
+        ptr:ptrMode="pullFromStart" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <krelve.view.Kanner
+                android:id="@+id/kanner"
+                android:layout_width="match_parent"
+                android:layout_height="140dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#eeeeee"
+                android:orientation="horizontal"
+                android:padding="10dp" >
+
+                <TextView
+                    android:id="@+id/type_eat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawableTop="@drawable/ic_category_7"
+                    android:gravity="center_horizontal"
+                    android:text="零食"
+                    android:textSize="14sp" >
+                </TextView>
+
+                <TextView
+                    android:id="@+id/type_clothes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawableTop="@drawable/ic_category_11"
+                    android:gravity="center_horizontal"
+                    android:text="衣服"
+                    android:textSize="14sp" >
+                </TextView>
+
+                <TextView
+                    android:id="@+id/type_daily"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawableTop="@drawable/ic_category_14"
+                    android:gravity="center_horizontal"
+                    android:text="日用"
+                    android:textSize="14sp" >
+                </TextView>
+
+                <TextView
+                    android:id="@+id/type_other"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawableTop="@drawable/ic_category_15"
+                    android:gravity="center_horizontal"
+                    android:text="其他"
+                    android:textSize="14sp" >
+                </TextView>
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="5dp"
+                android:background="#eeeeee"
+                android:padding="5dp"
+                android:paddingLeft="3dp"
+                android:scaleType="fitStart"
+                android:src="@drawable/buy_title" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:background="#eeeeee"
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp" >
+
+                <ImageView
+                    android:id="@+id/store_no1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="3dp"
+                    android:layout_weight="1"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/loading" />
+
+                <ImageView
+                     android:id="@+id/store_no2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="3dp"
+                    android:layout_weight="1"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/loading" />
+
+                <ImageView
+                    android:layout_width="0dp"
+                     android:id="@+id/store_no3"
+                    android:layout_height="match_parent"
+                    android:layout_margin="3dp"
+                    android:layout_weight="1"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/loading" />
+            </LinearLayout>
+			 <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="5dp"
+                android:background="#eeeeee"
+                android:padding="5dp"
+                android:paddingLeft="3dp"
+                android:text="大家都喜欢"
+                android:textSize="16sp"
+                android:textColor="#FF6600"
+                android:paddingBottom="10dp"
+                 />
+            <com.wodangjia.view.NoScrollListView
+                android:id="@+id/wo_all_like_listview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+            </com.wodangjia.view.NoScrollListView>
+        </LinearLayout>
+    </com.handmark.pulltorefresh.library.PullToRefreshScrollView>
+
+</LinearLayout>

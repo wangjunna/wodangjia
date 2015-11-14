@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true" >
+
+    <RadioGroup
+        android:id="@+id/order_radiogroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/rb_all"
+            style="@style/order_top"
+            android:layout_weight="1"
+            android:text="@string/order_list_all" />
+
+        <View style="@style/order_list_line" />
+
+        <RadioButton
+            android:id="@+id/rb_wait_pay"
+            style="@style/order_top"
+            android:layout_weight="1"
+            android:text="@string/order_list_daifukuan" />
+
+        <View style="@style/order_list_line" />
+
+        <RadioButton
+            android:id="@+id/rb_wait_send"
+            style="@style/order_top"
+            android:layout_weight="1"
+            android:text="@string/order_list_daifahuo" />
+
+        <View style="@style/order_list_line" />
+
+        <RadioButton
+            android:id="@+id/rb_hassend"
+            style="@style/order_top"
+            android:layout_weight="1"
+            android:text="@string/hassend" />
+
+        <View style="@style/order_list_line" />
+
+        <RadioButton
+            android:id="@+id/rb_wait_comment"
+            style="@style/order_top"
+            android:layout_weight="1"
+            android:text="@string/wait_comment" />
+        <View style="@style/order_list_line" />
+
+        <RadioButton
+            android:id="@+id/rb_refund"
+            style="@style/order_top"
+            android:layout_weight="1"
+            android:text="@string/refund" />
+    </RadioGroup>
+
+    <View
+        android:id="@+id/top_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/order_radiogroup"
+        android:background="#dddddd" />
+
+    <com.wodangjia.view.ReboundScrollView
+        android:layout_width="match_parent"
+        android:scrollbars="none"
+        android:layout_height="match_parent"
+        android:layout_below="@id/top_line" >
+        
+
+        <com.wodangjia.view.NoScrollListView
+            android:id="@+id/order_listview"
+            android:dividerHeight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+        </com.wodangjia.view.NoScrollListView>
+    </com.wodangjia.view.ReboundScrollView>
+     <LinearLayout
+		android:id="@+id/ll_empty"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_centerInParent="true"
+		android:layout_marginBottom="15dp"
+		android:gravity="center"
+		android:orientation="vertical"
+		android:visibility="gone" >
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="您还没有相关订单"
+			android:textColor="@color/black_text"
+			android:textSize="@dimen/c_text_size" />
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginBottom="15dp"
+			android:layout_marginTop="8dp"
+			android:text="去推广商品去吧"
+			android:textColor="@color/main_color"
+			android:textSize="14sp" />
+
+		<TextView
+			android:id="@+id/tv_seemore"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:background="@drawable/button_order_selector_shape_main"
+			android:clickable="true"
+			android:gravity="center"
+			android:paddingBottom="8dp"
+			android:paddingLeft="15dp"
+			android:paddingRight="15dp"
+			android:paddingTop="8dp"
+			android:text="返回店铺"
+			android:textColor="@color/black_text"
+			android:textSize="14sp" />
+	</LinearLayout>
+    
+
+</RelativeLayout>

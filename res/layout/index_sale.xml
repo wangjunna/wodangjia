@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <com.handmark.pulltorefresh.library.PullToRefreshScrollView
+        android:id="@+id/sale_pulltorefreshscrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="horizontal" >
+
+                <RelativeLayout
+                    android:id="@+id/index_sale_today_money"
+                    style="@style/index_sale_relative_top"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/button_serach_bg_red" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/today_amount"
+                        android:textColor="#ffffff" />
+
+                    <TextView
+                        android:id="@+id/today_money"
+                        style="@style/index_sale_font_topnum"
+                        android:singleLine="true"
+                        android:text="0.0"
+                        android:textSize="18sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/index_sale_today_order"
+                    style="@style/index_sale_relative_top"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/button_serach_bg_blue" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/today_order"
+                        android:textColor="#ffffff" />
+
+                    <TextView
+                        android:id="@+id/today_order"
+                        style="@style/index_sale_font_topnum"
+                        android:text="0" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/index_sale_today_refund"
+                    style="@style/index_sale_relative_top"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/button_serach_bg_yellow" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/refunding"
+                        android:textColor="#ffffff" />
+
+                    <TextView
+                        android:id="@+id/refund_order"
+                        style="@style/index_sale_font_topnum"
+                        android:text="0" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/menu_list_bg"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:id="@+id/index_sale_store_manager"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="@drawable/menu_option_bg"
+                    android:clickable="true" >
+
+                    <TextView
+                        style="@style/menu_tv_info"
+                        android:layout_alignParentLeft="true"
+                        android:text="@string/stroe_manager" />
+
+                    <ImageView
+                        android:id="@+id/iv_store_enter"
+                        style="@style/menu_iv_enter"
+                        android:src="@drawable/ic_enter" />
+
+                    <View
+                        style="@style/menu_v_line"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toLeftOf="@id/iv_store_enter" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/index_sale_order_manager"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="@drawable/menu_option_bg"
+                    android:clickable="true" >
+
+                    <TextView
+                        style="@style/menu_tv_info"
+                        android:layout_alignParentLeft="true"
+                        android:text="@string/order_manager" />
+
+                    <ImageView
+                        android:id="@+id/iv_order_enter"
+                        style="@style/menu_iv_enter"
+                        android:src="@drawable/ic_enter" />
+
+                    <View
+                        style="@style/menu_v_line"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toLeftOf="@id/iv_order_enter" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <RelativeLayout
+                        android:id="@+id/index_sale_wait_send"
+                        style="@style/index_sale_rl_orders" >
+
+                        <ImageView
+                            android:id="@+id/iv_wait"
+                            android:layout_width="match_parent"
+                            android:layout_height="25dp"
+                            android:src="@drawable/icon_sale_wait" >
+                        </ImageView>
+
+                        <TextView
+                            style="@style/index_sale_font_below_img"
+                            android:layout_below="@id/iv_wait"
+                            android:text="@string/wait_send_goods" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/index_sale_wait_pay"
+                        style="@style/index_sale_rl_orders" >
+
+                        <ImageView
+                            android:id="@+id/iv_nopay"
+                            android:layout_width="match_parent"
+                            android:layout_height="25dp"
+                            android:src="@drawable/icon_sale_nopay" >
+                        </ImageView>
+
+                        <TextView
+                            style="@style/index_sale_font_below_img"
+                            android:layout_below="@id/iv_nopay"
+                            android:text="@string/wait_pay" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/index_sale_has_send"
+                        style="@style/index_sale_rl_orders" >
+
+                        <ImageView
+                            android:id="@+id/iv_send"
+                            android:layout_width="wrap_content"
+                            android:layout_height="25dp"
+                            android:src="@drawable/icon_sale_send" >
+                        </ImageView>
+
+                        <TextView
+                            style="@style/index_sale_font_below_img"
+                            android:layout_below="@id/iv_send"
+                            android:text="@string/has_send" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/index_sale_wait_evaluation"
+                        style="@style/index_sale_rl_orders" >
+
+                        <ImageView
+                            android:id="@+id/iv_evaluation"
+                            android:layout_width="wrap_content"
+                            android:layout_height="25dp"
+                            android:src="@drawable/icon_sale_evaluation" >
+                        </ImageView>
+
+                        <TextView
+                            style="@style/index_sale_font_below_img"
+                            android:layout_below="@id/iv_evaluation"
+                            android:text="@string/wait_evaluation" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5" />
+                </LinearLayout>
+
+                <View
+                    style="@style/menu_v_line"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="25dp" />
+
+                <RelativeLayout
+                    android:id="@+id/index_sale_goods_manager"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="@drawable/menu_option_bg"
+                    android:clickable="true" >
+
+                    <TextView
+                        style="@style/menu_tv_info"
+                        android:layout_alignParentLeft="true"
+                        android:text="@string/goods_manager" />
+
+                    <ImageView
+                        android:id="@+id/iv_goods_enter"
+                        style="@style/menu_iv_enter"
+                        android:src="@drawable/ic_enter" />
+
+                    <View
+                        style="@style/menu_v_line"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toLeftOf="@id/iv_goods_enter" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/index_sale_store_income"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="@drawable/menu_option_bg"
+                    android:clickable="true" >
+
+                    <TextView
+                        style="@style/menu_tv_info"
+                        android:layout_alignParentLeft="true"
+                        android:text="@string/my_income" />
+
+                    <ImageView
+                        android:id="@+id/iv_income_enter"
+                        style="@style/menu_iv_enter"
+                        android:src="@drawable/ic_enter" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </com.handmark.pulltorefresh.library.PullToRefreshScrollView>
+
+</LinearLayout>

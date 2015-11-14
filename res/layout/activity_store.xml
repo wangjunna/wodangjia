@@ -1,0 +1,120 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="0dp" >
+
+    <com.wodangjia.view.ReboundScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="0dp"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="0dp" >
+
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="0dp"
+                android:padding="0dp"
+                android:scaleType="fitXY" />
+
+            <LinearLayout
+                android:id="@+id/store_info"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:padding="10dp" >
+
+                <TextView
+                    android:id="@+id/tv_storename"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="2"
+                    android:text="我的店铺名称"
+                    android:textSize="16sp" />
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="match_parent"
+                    android:background="#dddddd" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+                    <TextView
+                        android:id="@+id/tv_sales"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center"
+                        android:textColor="#888888" />
+                    <ImageView 
+                        android:id="@+id/store_level"
+                        android:layout_height="15dp"
+                        android:layout_width="15dp"
+                        android:src="@drawable/ic_user_growth_0"/>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="match_parent"
+                    android:background="#dddddd" />
+
+                <TextView
+                    android:id="@+id/tv_collections"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="收藏"
+                    android:textColor="#888888" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_all_goods"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#dddddd"
+                android:padding="10dp"
+                android:text="店中的全部商品"
+                android:textColor="#F40" />
+
+            <com.wodangjia.view.NoScrollListView
+                android:id="@+id/item_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+            </com.wodangjia.view.NoScrollListView>
+        </LinearLayout>
+    </com.wodangjia.view.ReboundScrollView>
+
+    <ImageView
+        android:id="@+id/btn_back"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/btn_transparent_circle_button_bg"
+        android:src="@drawable/btn_back_bg" />
+
+    <ImageView
+        android:id="@+id/store_collect"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/btn_transparent_circle_button_bg"
+        android:scaleType="centerCrop"
+        android:src="@drawable/icon_collect_off" />
+
+</RelativeLayout>

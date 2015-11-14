@@ -1,0 +1,39 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_content_background_color"
+    android:fitsSystemWindows="true"
+    android:padding="15dp" >
+
+    <EditText
+        android:id="@+id/et_feedback_context"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="@drawable/suggest_bg"
+        android:gravity="top"
+        android:maxLines="14"
+        android:layout_margin="10dp"
+        android:hint="请留下您宝贵的意见，我们将不断提升自己，为您提供更好地体验" />
+
+    <EditText
+        android:id="@+id/et_contact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_feedback_context"
+        android:layout_margin="10dp"
+        android:singleLine="true"
+        android:background="@drawable/suggest_bg"
+        android:hint="手机号/邮箱(选填)" />
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/et_contact"
+        android:layout_margin="10dp"
+        android:background="@drawable/login_button_dbg"
+        android:text="提交反馈"
+        android:textColor="#ffffff" />
+
+</RelativeLayout>

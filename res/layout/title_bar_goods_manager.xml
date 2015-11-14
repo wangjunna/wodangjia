@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.example.wodangjialayout"
+    style="@style/action_bar_whb" >
+
+     <ImageButton
+        android:id="@+id/btn_back"
+        android:layout_width="25dp"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5dp"
+        android:background="@color/main_color"
+        android:paddingLeft="5dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/btn_back_bg" />
+
+    <RadioGroup
+        android:id="@+id/goods_manager_title_radiogroup"
+        android:layout_width="120dp"
+        android:layout_height="32dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/chat_title_rg_bg"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/goods_manager_title_onsale"
+            style="@style/index_chat_title_rb"
+            android:background="@drawable/chat_title_rb_bg_left"
+            android:checked="true"
+            android:text="@string/onsale" />
+
+        <RadioButton
+            android:id="@+id/goods_manager_title_offsale"
+            style="@style/index_chat_title_rb"
+            android:background="@drawable/chat_title_rb_bg_right"
+            android:text="@string/offshelf" />
+    </RadioGroup>
+
+</RelativeLayout>

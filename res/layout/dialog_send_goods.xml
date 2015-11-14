@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/rl_express"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:layout_margin="10dp"
+            android:id="@+id/label_express"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="快递" />
+
+        <TextView
+            android:layout_margin="10dp"
+            android:layout_below="@id/label_express"
+            android:id="@+id/label_express_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="运单编号" />
+        <View android:layout_height="0.5dp"
+            android:layout_width="match_parent"
+            android:background="#dddddd"/>
+
+        <EditText
+            android:id="@+id/spinner_express"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+             android:background="@color/white"
+            android:layout_alignTop="@id/label_express"
+            android:hint="请输入快递名称"
+            android:layout_toRightOf="@id/label_express_no" />
+
+        <EditText
+            android:id="@+id/et_express_no"
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/label_express_no"
+            android:layout_alignTop="@id/label_express_no"
+            android:hint="请输入运单号码" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+</LinearLayout>

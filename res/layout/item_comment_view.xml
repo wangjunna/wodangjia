@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+     android:background="@color/white"
+    android:padding="10dp" xmlns:app="http://schemas.android.com/apk/res/com.example.wodangjialayout">
+
+    <RelativeLayout
+       
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <com.wodangjia.view.CircleImageView
+            android:id="@+id/photo"
+            app:border_color="#eeeeee"
+            android:layout_width="36dp"
+            android:layout_height="36dp" />
+
+        <TextView
+            android:paddingTop="5dp"
+            android:id="@+id/usernickname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/photo"
+            android:textColor="#666666"
+            android:text="sadad" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/content"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:textSize="16sp"
+        android:text="很好"/>
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:paddingTop="5dp"
+        android:layout_height="wrap_content"
+        android:text="2015-10-17 10:47:17"
+        android:textSize="12sp" />
+
+</LinearLayout>

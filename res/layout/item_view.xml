@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <ImageView
+        android:id="@+id/item_img"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginRight="10dp" />
+
+    <TextView
+        android:id="@+id/item_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/item_img"
+        android:singleLine="true"
+        android:textSize="16sp"
+        android:textColor="#444444"
+        android:text="标题" />
+
+    <TextView
+        android:id="@+id/item_subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/item_title"
+        android:layout_below="@id/item_title"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:textColor="#999999"
+        android:text="商品描述" />
+
+    <TextView
+        android:id="@+id/item_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/item_img"
+        android:layout_alignLeft="@id/item_title"
+        android:textColor="#00bbbb"
+        android:textSize="20sp"
+        android:ellipsize="end"
+        android:textStyle="bold"
+        android:text="价格" />
+
+    <TextView
+        android:id="@+id/item_sales"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_alignBottom="@id/item_img"
+        android:layout_alignParentRight="true"
+        android:textColor="#666666"
+        android:text="销量" />
+
+    <RatingBar
+        android:id="@+id/ratingbar_star"
+        style="@style/roomRatingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="15dp"
+        android:rating="4"
+        android:isIndicator="true"
+        android:layout_alignLeft="@+id/item_subtitle"
+        android:layout_below="@+id/item_subtitle" />
+
+</RelativeLayout>

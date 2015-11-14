@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" 
+    android:background="@color/white">
+
+    <RadioButton
+        android:id="@+id/delivery_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        
+        android:textColor="#666666"
+        android:text="拍下减库存" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#eeeeee" />
+
+    <RadioButton
+        android:id="@+id/delivery_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:checked="false"
+        android:text="付款减库存"
+        android:textColor="#666666" />
+  
+
+</RadioGroup>

@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.wodangjialayout"
+    android:installLocation="preferExternal"
+    android:versionCode="1"
+    android:versionName="1.0.2" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="14" />
+
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- 录音 -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS_FULL" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <application
+        android:name="com.wodangjia.app.App"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_logo"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.wodangjia.activity.IndexActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing" >
+        </activity>
+        <activity
+            android:name=".StartActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.wodangjia.activity.RegisterActivity" >
+        </activity>
+        <activity android:name="com.wodangjia.activity.ForgetPwdActivity" >
+        </activity>
+        <activity android:name="com.wodangjia.activity.LoginActivity" >
+        </activity>
+        <activity android:name="com.wodangjia.activity.UserInfoActivity" >
+        </activity>
+        <activity android:name="com.wodangjia.activity.ChangePasswordActivity" >
+        </activity>
+        <activity android:name="com.wodangjia.activity.FastLoginActivity" >
+        </activity>
+        <activity android:name="com.wodangjia.activity.WalletActivity" >
+        </activity>
+        <activity android:name="com.wodangjia.activity.BundingActivity" >
+        </activity>
+        <activity android:name="com.wodangjia.activity.BundingNewActivity" >
+        </activity>
+        <activity android:name="com.wodangjia.activity.AddressActivity" >
+        </activity>
+        <activity android:name="com.wodangjia.activity.AddressAddActivity" >
+        </activity>
+        <activity android:name="com.wodangjia.activity.AddressEditActivity" >
+        </activity>
+        <activity android:name="com.wodangjia.activity.SubmitOrderActivity" >
+        </activity>
+        <activity android:name="com.wodangjia.activity.StoreOrderManagerActivity" >
+        </activity>
+        <activity
+            android:name="com.wodangjia.activity.ShoppingCartActivity"
+            android:label="@string/title_activity_shopping_cart" >
+        </activity>
+        <activity
+            android:name="com.wodangjia.activity.SettingActivity"
+            android:label="@string/title_activity_setting" >
+        </activity>
+        <activity
+            android:name="com.wodangjia.activity.Settlement"
+            android:label="@string/title_activity_settlement" >
+        </activity>
+        <activity
+            android:name="com.wodangjia.activity.ItemDetails"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar" >
+        </activity>
+        <activity
+            android:name="com.wodangjia.activity.GoodsManager"
+            android:label="@string/title_activity_goods_manager" >
+        </activity>
+        <activity
+            android:name="com.wodangjia.activity.EditGoodsActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.wodangjia.activity.CategoryActivity"
+            android:launchMode="singleTop" >
+        </activity>
+        <activity android:name="com.wodangjia.activity.OrderActivity" >
+        </activity>
+        <activity
+            android:name="com.wodangjia.activity.AddGoodsActivity"
+            android:label="@string/title_activity_add_goods"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.wodangjia.activity.SearchActivity"
+            android:label="@string/title_activity_index_search" >
+        </activity>
+        <activity
+            android:name="com.wodangjia.activity.SearchGoodsResultActivity"
+            android:label="@string/title_activity_search_result" >
+        </activity>
+        <activity
+            android:name="com.wodangjia.activity.StroeManager"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.wodangjia.activity.ConversationActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:host="com.example.wodangjialayout"
+                    android:pathPrefix="/conversation/"
+                    android:scheme="rong" />
+            </intent-filter>
+        </activity>
+
+        <!-- 聚合会话列表 -->
+        <activity
+            android:name="com.wodangjia.activity.SubConversationListActivtiy"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:host="com.example.wodangjialayout"
+                    android:pathPrefix="/subconversationlist"
+                    android:scheme="rong" />
+            </intent-filter>
+        </activity>
+        <!-- begin rongcloud -->
+        <activity
+            android:name="io.rong.voipkit.activity.CallSideActivity"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:host="io.rong.app"
+                    android:pathPrefix="/VoIPCall"
+                    android:scheme="rong" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="io.rong.voipkit.activity.CalledSideActivity"
+            android:excludeFromRecents="true"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:host="io.rong.app"
+                    android:pathPrefix="/VoIPAccept"
+                    android:scheme="rong" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name="io.rong.push.PushService"
+            android:process="io.rong.push" >
+
+            <!-- Waring: The name of the push process can't be changed!!! -->
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <action android:name="io.rong.push" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="io.rong.push.CommandService"
+            android:process="io.rong.push" >
+
+            <!-- Waring: The name of the push process can't be changed!!! -->
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <action android:name="io.rong.command" />
+            </intent-filter>
+        </service>
+
+        <receiver
+            android:name="io.rong.push.PushReceiver"
+            android:process="io.rong.push" >
+
+            <!-- Waring: The name of the push process can't be changed!!! -->
+            <intent-filter>
+                <action android:name="io.rong.imlib.action.push.heartbeat" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="io.rong.imkit.tools.SelectPictureActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="io.rong.imkit.tools.PreviewPictureActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="io.rong.imkit.tools.RongWebviewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="io.rong.imkit.widget.provider.TakingPicturesActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+
+        <service
+            android:name="io.rong.imlib.ipc.RongService"
+            android:process=":ipc" >
+        </service>
+        <service android:name="io.rong.imlib.ReConnectService" />
+
+        <receiver android:name="io.rong.imlib.ConnectChangeReceiver" />
+        <receiver android:name="io.rong.imlib.ipc.PushMessageReceiver" >
+            <intent-filter>
+                <action android:name="io.rong.push.message" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="io.rong.imlib.HeartbeatReceiver"
+            android:process=":ipc" />
+
+        <meta-data
+            android:name="RONG_CLOUD_APP_KEY"
+            android:value="k51hidwq1bg6b" />
+
+        <!-- end rongcloud -->
+        <activity android:name="com.wodangjia.activity.PhotoActivity" >
+        </activity>
+        <activity android:name="com.wodangjia.activity.AboutActivity" >
+        </activity>
+        <activity
+            android:name="com.wodangjia.activity.StoreActivity"
+            android:label="@string/title_activity_store"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar" >
+        </activity>
+        <activity
+            android:name="com.wodangjia.activity.BuyOrderActivity"
+            android:label="@string/title_activity_buy_order" >
+        </activity>
+        <activity
+            android:name="com.wodangjia.activity.CommentActivity"
+            android:label="@string/title_activity_comment" >
+        </activity>
+        <activity
+            android:name="com.wodangjia.activity.SearchStoreResultActivity"
+            android:label="@string/title_activity_search_store_result" >
+        </activity>
+        <activity
+            android:name="com.wodangjia.activity.FeedBackActivity"
+            android:label="@string/title_activity_feed_back" >
+        </activity>
+        <activity android:name="com.wodangjia.activity.CollectionActivity" >
+        </activity>
+        <activity
+            android:name="com.wodangjia.activity.MyIncomeActivity"
+            android:label="@string/title_activity_my_income" >
+        </activity>
+    </application>
+
+</manifest>

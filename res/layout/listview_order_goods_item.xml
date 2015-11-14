@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/goods_info"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:padding="10dp" >
+
+    <ImageView
+        android:id="@+id/item_img"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:paddingTop="5dp"
+        android:src="@drawable/item1" />
+
+    <TextView
+        android:id="@+id/item_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/item_img"
+        android:paddingTop="5dp"
+        android:singleLine="true"
+        android:text="背景啊啊富士达发生的发生地方背景啊啊富士达发生的发生地方"
+        android:textColor="#888888" />
+
+    <TextView
+        android:id="@+id/item_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/item_title"
+        android:layout_below="@id/item_title"
+        android:layout_marginTop="10dp"
+        android:text="￥18.0"
+        android:textColor="#00cccc"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/item_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:text="2" />
+
+  
+
+</RelativeLayout>

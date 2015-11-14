@@ -1,0 +1,197 @@
+<RelativeLayout xmlns:app="http://schemas.android.com/apk/res/com.example.wodangjialayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/stroe_img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitCenter"
+        android:src="@drawable/store_default_img" />
+
+    <com.wodangjia.view.ReboundScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/stroe_img"
+        android:background="@color/app_content_background_color" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/menu_list_bg"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:id="@+id/rl_stroe_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="@drawable/menu_option_bg"
+                    android:clickable="true" >
+
+                    <TextView
+                        style="@style/menu_tv_info"
+                        android:layout_alignParentLeft="true"
+                        android:text="店铺名称" />
+
+                    <ImageView
+                        android:id="@+id/iv_store_name_enter"
+                        style="@style/menu_iv_enter"
+                        android:src="@drawable/ic_enter" />
+
+                    <TextView
+                        android:id="@+id/tv_name"
+                        style="@style/menu_tv_info_right"
+                        android:layout_toLeftOf="@id/iv_store_name_enter"
+                        android:text="店铺名称" />
+
+                    <View
+                        style="@style/menu_v_line"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toLeftOf="@id/iv_store_name_enter" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_certification"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="@drawable/menu_option_bg"
+                    android:clickable="true" >
+
+                    <TextView
+                        style="@style/menu_tv_info"
+                        android:layout_alignParentLeft="true"
+                        android:text="@string/authentication" />
+
+                    <ImageView
+                        android:id="@+id/iv_authentication_enter"
+                        style="@style/menu_iv_enter"
+                        android:src="@drawable/ic_enter" />
+
+                    <TextView
+                        android:id="@+id/tv_certification"
+                        style="@style/menu_tv_info_right"
+                        android:layout_toLeftOf="@id/iv_authentication_enter"
+                        android:text="未认证" />
+
+                    <View
+                        style="@style/menu_v_line"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toLeftOf="@id/iv_authentication_enter" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_delivery"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="@drawable/menu_option_bg"
+                    android:clickable="true" >
+
+                    <TextView
+                        style="@style/menu_tv_info"
+                        android:layout_alignParentLeft="true"
+                        android:text="@string/delivery" />
+
+                    <ImageView
+                        android:id="@+id/iv_delivery_enter"
+                        style="@style/menu_iv_enter"
+                        android:src="@drawable/ic_enter" />
+
+                    <TextView
+                        android:id="@+id/tv_delivery"
+                        style="@style/menu_tv_info_right"
+                        android:layout_toLeftOf="@id/iv_delivery_enter"
+                        android:text="拍下减库存" />
+
+                    <View
+                        style="@style/menu_v_line"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toLeftOf="@id/iv_delivery_enter" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="@drawable/menu_option_bg"
+                    android:clickable="true" >
+
+                    <TextView
+                        style="@style/menu_tv_info"
+                        android:layout_alignParentLeft="true"
+                        android:text="@string/store_create_time" />
+
+                    <ImageView
+                        android:id="@+id/iv_time_enter"
+                        style="@style/menu_iv_enter"
+                          android:src="@drawable/icon_time" />
+
+                    <TextView
+                        android:id="@+id/tv_creat_time"
+                        style="@style/menu_tv_info_right"
+                        android:layout_toLeftOf="@id/iv_time_enter"
+                        android:text="2015-10-22 15:30:29" />
+
+                    <View
+                        style="@style/menu_v_line"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toLeftOf="@id/iv_time_enter" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_credit"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="@drawable/menu_option_bg"
+                    android:clickable="true" >
+
+                    <TextView
+                        style="@style/menu_tv_info"
+                        android:layout_alignParentLeft="true"
+                        android:text="@string/store_credit" />
+
+                    <ImageView
+                        android:id="@+id/iv_level"
+                        style="@style/menu_iv_enter"
+                        android:src="@drawable/ic_user_growth_0" />
+
+                    <TextView
+                        android:id="@+id/tv_credit"
+                        style="@style/menu_tv_info_right"
+                        android:layout_toLeftOf="@id/iv_level"
+                        android:text="122" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </com.wodangjia.view.ReboundScrollView>
+
+    <TextView
+        android:id="@+id/stroe_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="17dp"
+        android:layout_marginTop="30dp"
+        android:background="#55000000"
+        android:padding="6dp"
+        android:text="@string/change_store_logo"
+        android:textColor="#ffffffff"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:id="@+id/btn_back"
+        android:layout_width="40dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"
+        android:background="#55000000"
+        android:padding="10dp"
+        android:src="@drawable/ic_actionbar_back_down" />
+
+</RelativeLayout>

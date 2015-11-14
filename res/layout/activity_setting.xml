@@ -1,0 +1,141 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true" >
+
+    <com.wodangjia.view.ReboundScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true" >
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/setting_clean"
+                style="@style/user_info_menu_rl"
+                android:layout_marginTop="20dp" >
+
+                <TextView
+                    android:id="@+id/setting_clean_tv"
+                    style="@style/user_info_menu_tv"
+                    android:text="@string/setting_clean" />
+
+                <ImageView
+                    android:id="@+id/setting_clean_enter"
+                    style="@style/menu_iv_enter" />
+
+                <TextView
+                    android:id="@+id/iv_cache_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@id/setting_clean_enter"
+                    android:text="0.0kb" />
+
+                <View
+                    style="@style/user_info_menu_line_long"
+                    android:layout_alignParentBottom="true" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/feedback"
+                style="@style/user_info_menu_rl"
+                android:layout_marginTop="20dp" >
+
+                <TextView
+                    android:id="@+id/setting_suggest_tv"
+                    style="@style/user_info_menu_tv"
+                    android:text="@string/setting_suggest" />
+
+                <ImageView
+                    android:id="@+id/tting_suggest_enter"
+                    style="@style/menu_iv_enter" />
+
+                <View style="@style/user_info_menu_line_long" />
+
+                <View style="@style/user_info_menu_line" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_update"
+                style="@style/user_info_menu_rl" >
+
+                <TextView
+                    android:id="@+id/setting_edition_tv"
+                    style="@style/user_info_menu_tv"
+                    android:text="@string/setting_edition" />
+
+                <ImageView
+                    android:id="@+id/setting_edition_enter"
+                    style="@style/menu_iv_enter" />
+
+                <TextView
+                    android:id="@+id/tv_version"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:textColor="#666666"
+                    android:layout_toLeftOf="@+id/setting_edition_enter"
+                    android:text="当前版本" />
+
+                <View
+                    style="@style/user_info_menu_line"
+                    android:layout_alignParentBottom="true" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/setting_share"
+                style="@style/user_info_menu_rl" >
+
+                <TextView
+                    android:id="@+id/setting_pic_tv"
+                    style="@style/user_info_menu_tv"
+                    android:text="@string/sharetofriend" />
+
+                <ImageView
+                    android:id="@+id/setting_pic_enter"
+                    style="@style/menu_iv_enter" />
+
+                <View style="@style/user_info_menu_line_long" />
+
+                <View style="@style/user_info_menu_line" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/setting_about"
+                style="@style/user_info_menu_rl" >
+
+                <TextView
+                    android:id="@+id/setting_about_tv"
+                    style="@style/user_info_menu_tv"
+                    android:text="@string/setting_about" />
+
+                <ImageView
+                    android:id="@+id/setting_about_enter"
+                    style="@style/menu_iv_enter" />
+
+                <View
+                    style="@style/user_info_menu_line_long"
+                    android:layout_alignParentBottom="true" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/logout"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@id/linearLayout"
+                android:layout_margin="35dp"
+                android:background="@drawable/login_button_dbg"
+                android:gravity="center"
+                android:text="@string/logout"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </com.wodangjia.view.ReboundScrollView>
+
+</LinearLayout>

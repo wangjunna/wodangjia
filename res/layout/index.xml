@@ -1,0 +1,62 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/page"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical" >
+
+    <!-- android:fitsSystemWindows="true" -->
+
+    <RadioGroup
+        android:id="@+id/bottom_radiogroup"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/buy"
+            style="@style/bottom_radiogroup"
+            android:drawableTop="@drawable/bottom_btn_buy"
+            android:text="买"
+            android:textColor="@drawable/bottom_radio_text_color" />
+
+        <RadioButton
+            android:id="@+id/sale"
+            style="@style/bottom_radiogroup"
+            android:drawableTop="@drawable/bottom_btn_sale"
+            android:text="卖"
+            android:textColor="@drawable/bottom_radio_text_color" />
+
+        <RadioButton
+            android:id="@+id/chat"
+            style="@style/bottom_radiogroup"
+            android:drawableTop="@drawable/bottom_btn_chat"
+            android:text="聊"
+            android:textColor="@drawable/bottom_radio_text_color" />
+
+        <RadioButton
+            android:id="@+id/my"
+            style="@style/bottom_radiogroup"
+            android:drawableTop="@drawable/bottom_btn_my"
+            android:text="我"
+            android:textColor="@drawable/bottom_radio_text_color" />
+    </RadioGroup>
+
+    <com.wodangjia.view.ViewPager
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottom_radiogroup"
+        android:layout_alignParentTop="true" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/content"
+        android:background="#dddddd" />
+
+</RelativeLayout>

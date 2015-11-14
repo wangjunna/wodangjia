@@ -1,0 +1,79 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true" >
+
+    <LinearLayout
+        android:id="@+id/cart_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal" >
+
+        <CheckBox
+            android:id="@+id/shopping_cart_all_choose"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="#eeeeee"
+            android:checked="false"
+            android:text="全选" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="#dedede" >
+
+            <ImageView
+                android:id="@+id/shopping_cart_delete"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerInParent="true"
+                android:clickable="true"
+                android:src="@drawable/icon_delete" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/shopping_cart_all_price"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:background="#eeeeee"
+            android:gravity="center"
+            android:text="金额: 0.0" />
+
+        <TextView
+            android:id="@+id/tv_settlement"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:background="#00cccc"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:textColor="#ffffff"
+            android:text="结算" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_above="@id/cart_bottom"
+        android:background="#bbbbbb" />
+
+    <com.wodangjia.view.ReboundScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" 
+        android:layout_above="@+id/line">
+
+        <com.wodangjia.view.NoScrollListView
+            android:id="@+id/shopping_cart_listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:dividerHeight="5dp"
+            android:scrollbars="none" />
+    </com.wodangjia.view.ReboundScrollView>
+
+</RelativeLayout>

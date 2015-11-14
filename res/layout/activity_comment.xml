@@ -1,0 +1,66 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.wodangjia.activity.CommentActivity" >
+
+    <Button
+        android:id="@+id/submit_comment"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="3dp"
+        android:background="@drawable/login_button_dbg"
+        android:text="@string/submit_comment"
+        android:textColor="@color/white"
+        android:textSize="14sp" />
+    <com.wodangjia.view.ReboundScrollView
+        android:layout_above="@id/submit_comment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+			 <RelativeLayout
+			     android:id="@+id/rl_top"
+			     android:layout_width="match_parent"
+			     android:layout_height="wrap_content"
+			     android:background="#ffffff"
+			     android:layout_marginBottom="10dp"
+			     android:padding="10dp" >
+
+			     <TextView
+			         android:id="@+id/tv_label_no"
+			         android:layout_width="wrap_content"
+			         android:layout_height="wrap_content"
+			         android:layout_centerVertical="true"
+			         android:text="订单编号："
+			         android:textColor="#666666" />
+
+			     <TextView
+			         android:id="@+id/order_no"
+			         android:layout_width="wrap_content"
+			         android:layout_height="wrap_content"
+			         android:layout_centerVertical="true"
+			         android:layout_marginLeft="5dp"
+			         android:layout_toRightOf="@id/tv_label_no"
+			         android:text="14464350365528784753"
+			         android:textColor="#888888" />
+			 </RelativeLayout>
+
+            <com.wodangjia.view.NoScrollListView
+                android:id="@+id/item_listview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+            </com.wodangjia.view.NoScrollListView>
+        </LinearLayout>
+    </com.wodangjia.view.ReboundScrollView>
+    
+    
+
+</RelativeLayout>

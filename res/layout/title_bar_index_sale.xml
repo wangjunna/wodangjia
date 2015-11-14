@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   style="@style/action_bar_whb">
+
+    <LinearLayout android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_centerInParent="true"
+        >
+        <ImageView 
+            android:layout_height="20dp"
+            android:layout_width="20dp"
+            android:src="@drawable/icon_index_sale_top"
+        />
+        <TextView 
+            android:layout_marginLeft="5dp"
+        android:id="@+id/action_bar_title"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:gravity="center"
+        style="@style/white_light_16sp"
+        android:text="我的店铺"
+        />
+        
+        
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

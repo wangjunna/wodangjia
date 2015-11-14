@@ -1,0 +1,172 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        style="@style/mm"
+        android:background="@color/app_content_background_color"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            style="@style/mw"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:padding="10dp" >
+
+            <ImageView
+                style="@style/ww"
+                android:src="@drawable/wallet_user_balance" />
+
+            <LinearLayout
+                style="@style/ww"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="15dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    style="@style/ww"
+                    android:text="@string/wallet_balance"
+                    android:textColor="#555555" />
+
+                <TextView
+                    android:id="@+id/tv_balance"
+                    style="@style/ww"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="5dp"
+                    android:text="0.00" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/wallet_balance_info"
+                android:layout_width="match_parent"
+                android:layout_height="73dp"
+                android:layout_marginLeft="20dp"
+                android:clickable="true"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="113dp"
+                    android:src="@drawable/ic_enter" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/mw"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:background="@drawable/wallet_recharge_bg"
+            android:padding="0.5dp" >
+
+            <LinearLayout
+                android:id="@+id/wallet_recharge"
+                style="@style/wallet_linearLayout" >
+
+                <ImageView
+                    style="@style/ww"
+                    android:src="@drawable/wallet_mony_in" />
+
+                <TextView
+                    style="@style/ww"
+                    android:textSize="18sp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dp"
+                    android:text="@string/wallet_money_recharge" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:background="#dddddd" />
+
+            <LinearLayout
+                android:id="@+id/wallet_taken"
+                style="@style/wallet_linearLayout" >
+
+                <ImageView
+                    style="@style/ww"
+                    android:src="@drawable/wallet_mony_out" />
+
+                <TextView
+                    style="@style/ww"
+                    android:textSize="18sp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dp"
+                    android:text="@string/wallet_money_withdraw" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/mw"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/wallet_recharge_bg"
+            android:orientation="vertical" >
+
+            <View style="@style/user_info_menu_line_long" />
+
+            <RelativeLayout
+                android:id="@+id/wallet_list_pay_pasd"
+                style="@style/wallet_list_relativeLayout" >
+
+                <ImageView
+                    android:id="@+id/wallet_list_imageview1"
+                    style="@style/wallet_list_imageView"
+                    android:src="@drawable/wallet_pay_password" />
+
+                <TextView
+                    android:id="@+id/wallet_list_textView1"
+                    style="@style/ww"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/wallet_list_imageview1"
+                    android:text="@string/wallet_pay_pasd" />
+
+                <ImageView
+                    android:id="@+id/wallet_list_imageView2"
+                    style="@style/wallet_list_imageView2" />
+            </RelativeLayout>
+
+            <View style="@style/user_info_menu_line_long" />
+
+            <RelativeLayout
+                android:id="@+id/wallet_list_check"
+                style="@style/wallet_list_relativeLayout" >
+
+                <ImageView
+                    android:id="@+id/wallet_list_imageview3"
+                    style="@style/wallet_list_imageView"
+                    android:paddingLeft="5dp"
+                    android:src="@drawable/wallet_check_detail" />
+
+                <TextView
+                    android:id="@+id/wallet_list_textView3"
+                    style="@style/ww"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="7dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/wallet_list_imageview3"
+                    android:text="@string/wallet_detail" />
+
+                <ImageView
+                    android:id="@+id/wallet_list_imageView4"
+                    style="@style/wallet_list_imageView2" />
+            </RelativeLayout>
+
+            <View style="@style/user_info_menu_line_long" />
+        </LinearLayout>
+
+        <com.wodangjia.view.NoScrollListView
+            android:id="@+id/wallet_log_listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="1dp"
+            android:background="@color/white"
+            android:paddingLeft="10dp" >
+        </com.wodangjia.view.NoScrollListView>
+    </LinearLayout>
+
+</ScrollView>

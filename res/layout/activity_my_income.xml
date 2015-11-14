@@ -1,0 +1,45 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.wodangjia.activity.MyIncomeActivity" >
+
+    <RelativeLayout
+        android:id="@+id/historical_turnover"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/main_color" >
+
+        <TextView
+            android:id="@+id/all_income"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="0.00"
+            android:textColor="@color/white"
+            android:textSize="30sp" />
+    </RelativeLayout>
+	<TextView android:layout_height="wrap_content"
+	    android:layout_marginTop="5dp"
+	    android:layout_width="match_parent"
+	    android:id="@+id/tv_bill"
+	    android:background="#cccccc"
+	     android:layout_below="@id/historical_turnover"
+	     android:padding="10dp"
+	     android:textSize="14sp"
+	     android:textColor="#ffffff"
+	    android:text="历史账单"/>
+    <com.wodangjia.view.ReboundScrollView
+        android:layout_below="@id/tv_bill"
+        android:layout_width="match_parent"
+        android:scrollbars="none"
+        android:layout_height="match_parent" >
+        <com.wodangjia.view.NoScrollListView
+            android:id="@+id/bill_listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+        </com.wodangjia.view.NoScrollListView>
+    </com.wodangjia.view.ReboundScrollView>
+
+</RelativeLayout>

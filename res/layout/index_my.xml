@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_content_background_color"
+    android:orientation="vertical" xmlns:app="http://schemas.android.com/apk/res/com.example.wodangjialayout">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="#00cccc" >
+
+        <com.wodangjia.view.CircleImageView
+            android:id="@+id/index_my_iv_photo"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/ic_head_defaualt"
+            app:border_color="#22ffffff"
+            app:border_width="0dp" />
+
+        <TextView
+            android:id="@+id/index_my_tv_nickname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/index_my_iv_photo"
+            android:text="请点击登录"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+    <com.wodangjia.view.ReboundScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/menu_list_bg"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:id="@+id/index_my_rl_userinfo"
+                    style="@style/menu_rl" >
+
+                    <ImageView
+                        android:id="@+id/iv_info"
+                        style="@style/menu_iv_info"
+                        android:src="@drawable/my_info" />
+
+                    <TextView
+                        style="@style/menu_tv_info"
+                        android:layout_toRightOf="@id/iv_info"
+                        android:text="个人资料" />
+
+                    <ImageView
+                        android:id="@+id/iv_info_enter"
+                        style="@style/menu_iv_enter"
+                        android:src="@drawable/ic_enter" />
+
+                    <View
+                        style="@style/menu_v_line"
+                        android:layout_toLeftOf="@id/iv_info_enter"
+                        android:layout_toRightOf="@id/iv_info" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/index_my_rl_wallet"
+                    style="@style/menu_rl" >
+
+                    <ImageView
+                        android:id="@+id/iv_wallet"
+                        style="@style/menu_iv_info"
+                        android:src="@drawable/my_wallet" />
+
+                    <TextView
+                        style="@style/menu_tv_info"
+                        android:layout_toRightOf="@id/iv_wallet"
+                        android:text="钱包" />
+
+                    <ImageView
+                        android:id="@+id/iv_wallet_enter"
+                        style="@style/menu_iv_enter"
+                        android:src="@drawable/ic_enter" />
+
+                    <View
+                        style="@style/menu_v_line"
+                        android:layout_toLeftOf="@id/iv_wallet_enter"
+                        android:layout_toRightOf="@id/iv_wallet" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/index_my_rl_address"
+                    style="@style/menu_rl" >
+
+                    <ImageView
+                        android:id="@+id/iv_goods"
+                        style="@style/menu_iv_info"
+                        android:src="@drawable/my_address" />
+
+                    <TextView
+                        style="@style/menu_tv_info"
+                        android:layout_toRightOf="@id/iv_goods"
+                        android:text="收货地址" />
+
+                    <ImageView
+                        android:id="@+id/iv_goods_enter"
+                        style="@style/menu_iv_enter"
+                        android:src="@drawable/ic_enter" />
+
+                    <View
+                        style="@style/menu_v_line"
+                        android:layout_toLeftOf="@id/iv_goods_enter"
+                        android:layout_toRightOf="@id/iv_goods" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/index_my_rl_buyedgoods"
+                    style="@style/menu_rl" >
+
+                    <ImageView
+                        android:id="@+id/iv_buyedgoods"
+                        style="@style/menu_iv_info"
+                        android:src="@drawable/my_goods" />
+
+                    <TextView
+                        style="@style/menu_tv_info"
+                        android:layout_toRightOf="@id/iv_buyedgoods"
+                        android:text="已买到的商品" />
+
+                    <ImageView
+                        android:id="@+id/iv_buyedgoods_enter"
+                        style="@style/menu_iv_enter"
+                        android:src="@drawable/ic_enter" />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="0dp"
+                android:background="@drawable/menu_list_bg"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:id="@+id/index_my_rl_collection"
+                    style="@style/menu_rl" >
+
+                    <ImageView
+                        android:id="@+id/iv_collection"
+                        style="@style/menu_iv_info"
+                        android:src="@drawable/my_collection" />
+
+                    <TextView
+                        style="@style/menu_tv_info"
+                        android:layout_toRightOf="@id/iv_collection"
+                        android:text="我的收藏" />
+
+                    <ImageView
+                        android:id="@+id/iv_collection_enter"
+                        style="@style/menu_iv_enter"
+                        android:src="@drawable/ic_enter" />
+
+                    <View
+                        style="@style/menu_v_line"
+                        android:layout_toLeftOf="@id/iv_collection_enter"
+                        android:layout_toRightOf="@id/iv_collection" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/index_my_rl_password"
+                    style="@style/menu_rl" >
+
+                    <ImageView
+                        android:id="@+id/iv_password"
+                        style="@style/menu_iv_info"
+                        android:src="@drawable/my_password" />
+
+                    <TextView
+                        style="@style/menu_tv_info"
+                        android:layout_toRightOf="@id/iv_password"
+                        android:text="登录密码" />
+
+                    <ImageView
+                        android:id="@+id/iv_password_enter"
+                        style="@style/menu_iv_enter"
+                        android:src="@drawable/ic_enter" />
+
+                    <View
+                        style="@style/menu_v_line"
+                        android:layout_toLeftOf="@id/iv_password_enter"
+                        android:layout_toRightOf="@id/iv_password" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/index_my_rl_phone"
+                    style="@style/menu_rl" >
+
+                    <ImageView
+                        android:id="@+id/iv_phone"
+                        style="@style/menu_iv_info"
+                        android:src="@drawable/my_phone" />
+
+                    <TextView
+                        style="@style/menu_tv_info"
+                        android:layout_toRightOf="@id/iv_phone"
+                        android:text="绑定手机" />
+
+                    <ImageView
+                        android:id="@+id/iv_phone_enter"
+                        style="@style/menu_iv_enter"
+                        android:src="@drawable/ic_enter" />
+
+                    <View
+                        android:visibility="gone"
+                        style="@style/menu_v_line"
+                        android:layout_toLeftOf="@id/iv_phone_enter"
+                        android:layout_toRightOf="@id/iv_phone" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/index_my_rl_looked"
+                    style="@style/menu_rl" 
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:id="@+id/iv_looked"
+                        style="@style/menu_iv_info"
+                        android:src="@drawable/my_looked" />
+
+                    <TextView
+                        style="@style/menu_tv_info"
+                        android:layout_toRightOf="@id/iv_looked"
+                        android:text="浏览记录" />
+
+                    <ImageView
+                        android:id="@+id/iv_looked_enter"
+                        style="@style/menu_iv_enter"
+                        android:src="@drawable/ic_enter" />
+
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </com.wodangjia.view.ReboundScrollView>
+
+</LinearLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/goods_info"
+    android:layout_width="match_parent"
+    android:layout_height="81dp"
+    android:padding="5dp" >
+
+    <ImageView
+        android:id="@+id/item_img"
+        android:layout_width="144dp"
+        android:layout_height="81dp"
+        android:src="@drawable/item1" />
+
+    <TextView
+        android:id="@+id/item_store_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/item_img"
+        android:paddingTop="5dp"
+        android:singleLine="true"
+        android:text="天猫旗舰店"
+        android:textColor="#888888" />
+    <TextView
+        android:id="@+id/item_collect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:layout_marginLeft="5dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@id/item_img"
+        android:text="2" />
+
+    <ImageView
+        android:id="@+id/store_level"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_alignBottom="@+id/item_store_name"
+        android:layout_toRightOf="@+id/item_store_name"
+        android:src="@drawable/ic_user_growth_0" />
+
+</RelativeLayout>

@@ -1,0 +1,189 @@
+<RelativeLayout xmlns:app="http://schemas.android.com/apk/res/com.example.wodangjialayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true" >
+
+    <com.wodangjia.view.ReboundScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/userinfo_rl_photo"
+                style="@style/user_info_menu_rl"
+                android:layout_height="80dp"
+                android:layout_marginTop="10dp" >
+
+                <TextView
+                    android:id="@+id/userinfo_tv_photo"
+                    style="@style/user_info_menu_tv"
+                    android:text="@string/photo" />
+
+                <ImageView
+                    android:id="@+id/iv_enter"
+                    style="@style/menu_iv_enter" />
+
+                <com.wodangjia.view.CircleImageView
+                    android:id="@+id/userinfo_civ_photo"
+                    android:layout_width="58dp"
+                    android:layout_height="58dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:layout_toLeftOf="@id/iv_enter"
+                    android:src="@drawable/myphoto"
+                    app:border_color="#eeeeee"
+                    app:border_width="2dp" />
+
+                <View
+                    style="@style/user_info_menu_line_long"
+                    android:layout_alignParentBottom="true" />
+
+                <View style="@style/user_info_menu_line_long" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/userinfo_rl_nickname"
+                style="@style/user_info_menu_rl"
+                android:layout_marginTop="20dp" >
+
+                <TextView
+                    android:id="@+id/iv_nickname"
+                    style="@style/user_info_menu_tv"
+                    android:text="@string/nickname" />
+
+                <ImageView
+                    android:id="@+id/iv_nickname_enter"
+                    style="@style/menu_iv_enter" />
+
+                <TextView
+                    android:id="@+id/nickname_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@id/iv_nickname_enter"
+                    android:text="用户999999" />
+
+                <View style="@style/user_info_menu_line_long" />
+
+                <View style="@style/user_info_menu_line" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/userinfo_rl_gender"
+                style="@style/user_info_menu_rl" >
+
+                <TextView
+                    android:id="@+id/iv_gender"
+                    style="@style/user_info_menu_tv"
+                    android:text="@string/gender" />
+
+                <ImageView
+                    android:id="@+id/iv_gender_enter"
+                    style="@style/menu_iv_enter" />
+
+                <TextView
+                    android:id="@+id/gender_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@id/iv_gender_enter"
+                    android:text="男" />
+
+                <View
+                    style="@style/user_info_menu_line"
+                    android:layout_alignParentBottom="true" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/userinfo_rl_school"
+                style="@style/user_info_menu_rl" >
+
+                <TextView
+                    android:id="@+id/iv_school"
+                    style="@style/user_info_menu_tv"
+                    android:text="@string/school" />
+
+                <ImageView
+                    android:id="@+id/iv_school_enter"
+                    style="@style/menu_iv_enter" />
+
+                <TextView
+                    android:id="@+id/school_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@id/iv_school_enter"
+                    android:text="洛阳师范学院" />
+
+                <View
+                    style="@style/user_info_menu_line_long"
+                    android:layout_alignParentBottom="true" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/userinfo_rl_buyer_credit"
+                style="@style/user_info_menu_rl"
+                android:layout_marginTop="20dp" >
+
+                <TextView
+                    android:id="@+id/iv_buyer_credit"
+                    style="@style/user_info_menu_tv"
+                    android:text="@string/buyer_credit" />
+
+                <ImageView
+                    android:id="@+id/iv_buyer_credit_enter"
+                    style="@style/menu_iv_enter" />
+
+                <TextView
+                    android:id="@+id/buyer_credit_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@id/iv_buyer_credit_enter"
+                    android:text="99" />
+
+                <View style="@style/user_info_menu_line_long" />
+
+                <View style="@style/user_info_menu_line" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/userinfo_rl_seller_credit"
+                style="@style/user_info_menu_rl" >
+
+                <TextView
+                    android:id="@+id/iv_seller_credit"
+                    style="@style/user_info_menu_tv"
+                    android:text="@string/seller_credit" />
+
+                <ImageView
+                    android:id="@+id/iv_seller_credit_enter"
+                    style="@style/menu_iv_enter" />
+
+                <TextView
+                    android:id="@+id/seller_credit_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@id/iv_seller_credit_enter"
+                    android:text="99" />
+
+                <View
+                    style="@style/user_info_menu_line_long"
+                    android:layout_alignParentBottom="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </com.wodangjia.view.ReboundScrollView>
+
+</RelativeLayout>
